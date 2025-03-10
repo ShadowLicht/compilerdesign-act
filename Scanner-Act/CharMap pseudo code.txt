@@ -1,0 +1,49 @@
+CharMap.h pseudocode
+
+declare public constructor CharMap();  in class CharMap
+
+declare public int function identify with parameter char c
+declare public integer array allchar with 256 elements and set all values to 5
+
+CharMap Constructor{
+
+initialize i equals 0
+
+for i  equals 65; i less than or equal to 90; iterate i by 1
+	allchar[i] = 1;
+
+for i  equals 97; i less than or equal to 122; iterate i by 1
+	allchar[i] = 1;
+
+for i  equals 48; i less than or equal to 57; iterate i by 1
+	allchar[i] = 2;
+
+for i  equals 35; i less than or equal to 47; iterate i by 1
+	allchar[i] = 3;
+
+for i  equals 58; i less than or equal to 64; iterate i by 1
+	allchar[i] = 3;
+
+for i  equals 91; i less than or equal to 96; iterate i by 1
+	allchar[i] = 3;
+
+for i  equals 123; i less than or equal to 126; iterate i by 1
+	allchar[i] = 3;
+
+for i  equals 145; i less than or equal to 148; iterate i by 1
+	allchar[i] = 4;
+
+for i  equals 9; i less than or equal to 10; iterate i by 1
+	allchar[i] = 0;
+
+    set allchar[34] = 0;
+    set allchar[32] = 0;
+    set allchar[33] = 3;
+
+}
+
+int Identify function{
+
+Return the value at the index of allchar
+
+}

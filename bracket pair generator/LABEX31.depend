@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1677073380 source:c:\users\admin\music\labex31\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+

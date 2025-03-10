@@ -1,0 +1,26 @@
+Char x: type: 1
+Char y: type: 1
+Char  : type: 0
+Char 1: type: 2
+Char 2: type: 2
+Char 3: type: 2
+Char 	: type: 0
+Char +: type: 3
+Char -: type: 3
+Char $: type: 3
+Char %: type: 3
+Char 
+: type: 0
+Char x: type: 1
+Char y: type: 1
+Char  : type: 0
+Char 1: type: 2
+Char 2: type: 2
+Char 3: type: 2
+Char 	: type: 0
+Char +: type: 3
+Char -: type: 3
+Char $: type: 3
+Char %: type: 3
+Char 
+: type: 0

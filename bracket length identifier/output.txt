@@ -1,0 +1,12 @@
+Original Brackets string: [[]
+Length of longest Brackets: 2
+
+Original Brackets string: [[]]]
+Length of longest Brackets: 4
+
+Original Brackets string: ]]]][[[[
+Length of longest Brackets: 0
+
+Original Brackets string: [[]]][][[]
+Length of longest Brackets: 8
+

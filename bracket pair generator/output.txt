@@ -1,0 +1,9 @@
+
+Input: 2 (Given pairs of Brackets)
+Output: [[]] [][] 
+
+Input: 3 (Given pairs of Brackets)
+Output: [[[]]] [[][]] [[]][] [][[]] [][][] 
+
+Input: 4 (Given pairs of Brackets)
+Output: [[[[]]]] [[[][]]] [[[]][]] [[[]]][] [[][[]]] [[][][]] [[][]][] [[]][[]] [[]][][] [][[[]]] [][[][]] [][[]][] [][][[]] [][][][] 

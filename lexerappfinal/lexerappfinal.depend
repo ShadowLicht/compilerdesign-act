@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1680020223 source:c:\users\admin\music\lexerappfinal\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"CharMap.h"
+
+1680260997 c:\users\admin\music\lexerappfinal\charmap.h
+	<vector>
+

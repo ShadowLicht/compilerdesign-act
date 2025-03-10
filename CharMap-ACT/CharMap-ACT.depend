@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1680269044 source:c:\users\admin\music\charmap-act\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"CharMap.h"
+
+1680268917 c:\users\admin\music\charmap-act\charmap.h
+

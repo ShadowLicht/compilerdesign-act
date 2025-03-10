@@ -1,0 +1,13 @@
+WORD - compiler12
+WORD - design
+NUMBER - 12,000.09
+ERROR - 21.07.21
+ERROR - 26we
+eof - 
+WORD - compiler12
+WORD - design
+eof - 
+NUMBER - 12,000.09
+ERROR - 21.07.21
+ERROR - 26we
+eof - 

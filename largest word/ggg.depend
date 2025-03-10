@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1676263947 source:c:\users\admin\music\ggg\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+

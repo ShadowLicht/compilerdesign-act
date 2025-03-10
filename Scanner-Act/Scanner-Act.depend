@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1683911073 source:c:\users\admin\music\scanner-act\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"Scanner.h"
+
+1683910840 c:\users\admin\music\scanner-act\scanner.h
+	"CharMap.h"
+
+1683899981 c:\users\admin\music\scanner-act\charmap.h
+

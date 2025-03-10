@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1685885609 source:c:\users\admin\music\socketimplementation\client.cpp
+	<iostream>
+	<winsock2.h>
+
+1685887617 source:c:\users\admin\music\socketimplementation\server.cpp
+	<iostream>
+	<winsock2.h>
+

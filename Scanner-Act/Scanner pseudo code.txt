@@ -1,0 +1,136 @@
+Scanner pseudo code
+
+include CharMap.h
+
+declare class token
+	in public scope: 
+		initialize integer tcode as public variable
+		initialize string type as public variable
+		initialize string value as public variable
+
+declare class Scanner
+
+	in private scope:
+		declare pointer CharMap object cmap
+		initialize string input
+	in public scope:
+		declare setter function Scanner with parameter string inp
+		declare Token class function getNextToken();
+		declare string function strtrim with parameter string str and integer sindex
+		declare setter function setCharMap with parameter CharMap pointer object cmap
+		declare enum TokenCode with the following value
+			ERROR = 0,
+           			WORD = 1,
+            			NUMBER = 2,
+            			E0F = 3
+		initialize static constant string TokenSTR
+
+
+function Scanner SetCharMap
+	assign the pointer address of cmap to this cmap
+
+
+
+Constructor Scanner(string inp)
+	assign inp to input
+
+
+Token Scanner getNextToken()
+	declare Token object token
+	initialize string tvalue
+	initialize integer dec_ctr equal to 0
+	initialize boolean haslet to false
+	initialize integer i equal to 0
+	
+	do
+		if cmap identify ( input[i]) equals 0
+			assign the return value of function strtrim(input, i+1) to input
+			continue
+		if cmap identify ( input[i]) equals 1
+			while cmap identify ( input[i]) not equal 0 and cmap identify ( input[i]) equals 1
+			or cmap identify ( input[i]) equals 2
+				iterate tvalue by the value of input[i]
+				iterate i
+			
+			assign WORD to token.tcode
+                      			assign TokenSTR[WORD] to token.type
+                        		assign tvalue to token.value
+
+			assign empty string value to tvalue
+			assign the return value of function strtrim(input, i) to input
+		
+
+		if cmap identify ( input[i]) equals 2
+			while cmap identify ( input[i]) not equal 0 and cmap identify ( input[i])  not equal 5
+				
+				if cmap identify ( input[i]) equals 1
+					assign true to haslet
+				if input[i] equals '.'
+					iterate dec_ctr
+				
+				
+				iterate tvalue by the value of input[i]
+				iterate i
+			
+			if haslet equals true or dec_ctr greater than 1
+			
+				assign ERROR to token.tcode
+                      				assign TokenSTR[ERROR] to token.type
+                        			assign tvalue to token.value
+
+				assign empty string value to tvalue
+				assign the return value of function strtrim(input, i) to input
+				break
+
+			else
+				assign NUMBER to token.tcode
+                      				assign TokenSTR[NUMBER] to token.type
+                        			assign tvalue to token.value
+
+				assign empty string value to tvalue
+				assign the return value of function strtrim(input, i) to input
+				break
+		
+
+		if cmap identify ( input[i]) equals 3
+			while cmap identify ( input[i]) not equal 0 
+				iterate tvalue by the value of input[i]
+				iterate i
+			
+			assign ERROR to token.tcode
+                      			assign TokenSTR[ERROR] to token.type
+                        		assign tvalue to token.value
+
+			assign empty string value to tvalue
+			assign the return value of function strtrim(input, i) to input
+			break
+
+		else
+			
+                      			assign empty string to token.type
+                        		assign empty string to token.value
+
+	iterate i
+	while i is less than length of input
+
+	if token.type is empty and token.value is empty
+		assign E0F to token.tcode
+                      		assign TokenSTR[E0F] to token.type
+                        	assign tvalue to token.value
+		assign empty string to token.value
+	
+	return token
+
+
+
+String Scanner strtrim(string str, int sindex)
+	initialize integer i equals to sindex
+	initialize empty string trimmedstr
+	
+	while i is less than the length of str
+		iterate trimmedstr by the value of str[i]
+		iterate i
+
+	return trimmedstr
+			
+

@@ -1,0 +1,135 @@
+CharMap.h pseudocode
+
+declare class token
+	in public scope: 
+		initialize string type as public variable
+		initialize string value as public variable
+
+declare class CharMap
+	in public scope: 
+		initialize vectory of string keywords equals to "int", "double", "char", "string", "boolean", "float", "short", "long", "for", "while", "if", "switch", "else", "do"}
+		declare constructor CharMap with string inp as parameter
+		
+		declare function getNextToken
+			declare object token
+			
+			while value of the first element of input is equal to space
+				assign input substring starting from index 1 as new value to input
+			
+			initialize spaceIndex equals to index of first occurence of space
+			
+			if input.substr(0, spaceIndex) is in keywords
+				token type equals to keyword
+				token value equals to input.substr(0, spaceIndex)
+				input equals to input.substr(spaceIndex);
+				return token
+
+			if input.find(";") is 0	
+				token type equals to SEMICOLON
+				token value equals to null
+				input equals to input.substr(1);
+				return token
+			if input.find("(") is 0
+				token type equals to LPAREN
+				token value equals to null
+				input equals to input.substr(1);
+				return token
+			if input.find(")") is 0
+				token type equals to RPAREN
+				token value equals to null
+				input equals to input.substr(1);
+				return token
+			if input.find("print") is 0
+				token type equals to PRINT
+				token value equals to null
+				input equals to input.substr(5);
+				return token
+			if input.find(",") is 0
+				token type equals to COMMA
+				token value equals to null
+				input equals to input.substr(1);
+				return token
+			if input.find("=") is 0
+				token type equals to ASSIGN_OP
+				token value equals to null
+				input equals to input.substr(1);
+				return token
+			if input.find("+") is 0
+				token type equals to PLUS_OP
+				token value equals to null
+				input equals to input.substr(1);
+				return token
+			if input.find("-") is 0
+				token type equals to MINUS_OP
+				token value equals to null
+				input equals to input.substr(1);
+				return token
+			if input.find("*") is 0
+				token type equals to MULT_OP
+				token value equals to null
+				input equals to input.substr(1);
+				return token
+			if input.find("/") is 0
+				token type equals to DIV_OP
+				token value equals to null
+				input equals to input.substr(1);
+				return token
+			if input.find("%") is 0
+				token type equals to MOD_OP
+				token value equals to null
+				input equals to input.substr(1);
+				return token
+
+			if input.find("\"") is 0
+				endIndex equals to input.find("\"", 1)
+				while endIndex not equal to string::npos and input[endIndex-1] is equal to '\\'
+					endIndex equals to input.find("\"", endIndex + 1)
+
+				token type equals to STRING
+				token value equals to input.substr(0, endIndex+1)
+				input equals to input.substr(endIndex+1)
+				return token
+
+			if input.find('\'') is 0
+				endIndex equals to 1
+
+				while endIndex less than input.size() and not (input[endIndex] == '\'' and input[endIndex-1] not equal to '\\')
+					iterate endIndex by 1
+
+				token type equals to CHAR
+				token value equals to input.substr(0, endIndex+1)
+				input equals to input.substr(endIndex+1)
+				return token
+
+			if isalpha(input[0])
+				endIndex equals to 1
+
+				while endIndex less than input.size() and isalpha(input[endIndex]) or isdigit(input[endIndex]
+					iterate endIndex by 1
+
+				token type equals to ID
+				token value equals to input.substr(0, endIndex)
+				input equals to input.substr(endIndex);
+				return token
+
+			if isdigit(input[0])
+				endIndex equals to 1
+
+				while endIndex less than input.size() and  isdigit(input[endIndex]
+					iterate endIndex by 1
+
+				token type equals to NUM
+				token value equals to input.substr(0, endIndex)
+				input equals to input.substr(endIndex);
+				return token
+			else
+				token type equals to null
+				token value equals to null
+
+	private scope
+		initialize string input
+
+
+Constructor CharMap(string inp)
+	assign inp to input
+						

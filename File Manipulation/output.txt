@@ -1,0 +1,3 @@
+The path of the executable file: C:\Users\admin\Music\labac1\bin\Debug\labac1.exe
+File #1: input.txt
+File #2: output.txt

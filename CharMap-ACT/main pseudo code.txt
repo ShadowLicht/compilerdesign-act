@@ -1,0 +1,41 @@
+Main Pseudo Code
+
+Initialize character c
+Initialize integer chtype equals 0
+Initialize string str
+Initialize string str1
+
+create ifstream object readf
+create ofstream object file
+
+if argc not equal to 3
+	Print "Usage" + argv 1st element
+
+
+open input.txt
+
+if input.txt is not open
+	Print "Unable to open " input.txt
+
+create a CharMap object cm
+
+While there is input from input.txt
+
+	store it to str
+
+	add str + newline to str1
+
+open output.txt
+
+if output.txt is not open
+	Print "Unable to open " output.txt
+
+for each character in str1
+
+	identify the character using the cm.identify then store it to chtype
+	print the character and its identification to the console
+	write the character and its identification to the output file
+
+Close the input and output files
+
+

@@ -1,0 +1,50 @@
+Main Pseudo Code
+
+Initialize character c
+Initialize string str
+Initialize string str1
+
+create ifstream object readf
+create ofstream object file
+
+if argc not equal to 3
+	Print "Usage" + argv 1st element
+
+
+open input.txt
+
+if input.txt is not open
+	Print "Unable to open " input.txt
+
+open output.txt
+
+if output.txt is not open
+	Print "Unable to open " output.txt
+
+
+Create Token object token
+
+While there is input from input.txt
+	store it to str
+
+	create a CharMap object cmap 
+
+
+	create a Scanner object scr
+	with parameter string str
+	
+	call function setCharMap with the address of cmap as parameter
+	using the object scr
+
+	do
+		print token.type
+		write token.type to output file
+
+		print token.value
+		write token.value to output file
+		
+	While token type is not equal to "eof"	
+	
+Close the input and output files
+
+
